@@ -1,4 +1,6 @@
-## Introduction:
+# The Filosax Dataset
+
+## Introduction
 
 The Filosax dataset was conceived, curated and compiled by Dave Foster (a PhD student on the AIM programme at QMUL) and his supervisor Simon Dixon (C4DM @ QMUL). It was introduced at [ISMIR 2021](https://ismir2021.ismir.net).
 
@@ -24,7 +26,7 @@ The motivations behind the dataset, as well as the technical details of the reco
 
 ***
 
-## Annotations:
+## Annotations
 
 For each piece, there is a corresponding [`.jams`](https://github.com/marl/jams) file containing piece-level annotations:
 
@@ -103,7 +105,7 @@ The Participant folders also contain MIDI files of the transcriptions (frame lev
 
 ***
 
-## Repertoire:
+## Repertoire
 
 | Tune                                   | Key | Av. Tempo (BPM) | Original Soloist       | Year | Album                                |
 |----------------------------------------|-----|-----------------|---------------|------|--------------------------------------|
@@ -158,7 +160,7 @@ The Participant folders also contain MIDI files of the transcriptions (frame lev
 
 ***
 
-## Demo:
+## Demo
 
 Download the MIDI and wav files below, and import them into your favourite DAW, to see the note transcription accuracy and tempo matching. The PDF file shows the score representation of the same passage.
 
@@ -170,7 +172,7 @@ Download the MIDI and wav files below, and import them into your favourite DAW, 
 
 ***
 
-## Try it out:
+## Try it out
 
 The full dataset is undergoing final validation checks and proof-reading, and will be available soon. In the meantime, interested parties can access a subset of the dataset, Filosax Lite, which contains 5 pieces played by 2 participants, for initial experimentation. This can be found on [Zenodo](https://zenodo.org/record/5643734#.YYLQ-i2l3UI), where an request for download needs to be accompanied by a valid research motivation and institution, and agreement with the terms and conditions. Initial users of the Lite dataset will be contacted once the full dataset is available. Integration with [mirdata](https://github.com/dave-foster/mirdata/tree/filosax)\* is also pending.
 
@@ -185,13 +187,13 @@ which populates the `/Backing` folder with edited files, which match the version
 
 ***
 
-## Feedback:
+## Feedback
 
 We welcome any constructive [feedback](mailto:d.foster@qmul.ac.uk?subject=[GitHub]%20Filosax%20Feedback%20(Constructive)), and will collaborate whenever possible to encourage novel research using the dataset.
 
 ***
 
-## License:
+## License
 
 The Filosax dataset contains copyright material and is shared with researchers under the following conditions:
 1. Filosax may only be used by the individual signing below and by members of the research group or organisation of this individual. This permission is not transferable.
@@ -207,7 +209,7 @@ The Filosax dataset contains copyright material and is shared with researchers u
 
 ***
 
-**Acknowledgements:**
+## Acknowledgements
 
 The author is a research student at the UKRI Centre for Doctoral Training in Artificial Intelligence and Music, supported by UK Research and Innovation [grant number EP/S022694/1].
 
