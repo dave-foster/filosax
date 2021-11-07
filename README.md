@@ -33,8 +33,11 @@ For each piece, there is a corresponding [`.jams`](https://github.com/marl/jams)
 - Chord annotation for each bar, and mid-bar chord change
 
 - Section annotation for when the solo changes between the 3 categories:
+
     1) head (melody)
+
     2) written solo (interpretation of transcribed solo)
+
     3) improvised solo
 
 For each Sax recording (5 per piece), there is a corresponding .json file containing note annotations:
