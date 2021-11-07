@@ -6,12 +6,18 @@ The Filosax dataset was conceived, curated and compiled by Dave Foster (a PhD st
 The dataset is a collection of 48 multitrack jazz recordings, where each piece has 7 corresponding audio files:
 
 1) `Bass_Drums`, a mono file of a mix of bass and drums
-3) `Piano_Drums`, a mono file of a mix of piano and drums
-4) `Participant 1 Sax`, a mono file of solo saxophone
-5) `Participant 2 Sax`, a mono file of solo saxophone
-6) `Participant 3 Sax`, a mono file of solo saxophone
-7) `Participant 4 Sax`, a mono file of solo saxophone
-8) `Participant 5 Sax`, a mono file of solo saxophone
+
+2) `Piano_Drums`, a mono file of a mix of piano and drums
+
+3) `Participant 1 Sax`, a mono file of solo saxophone
+
+4) `Participant 2 Sax`, a mono file of solo saxophone
+
+5) `Participant 3 Sax`, a mono file of solo saxophone
+
+6) `Participant 4 Sax`, a mono file of solo saxophone
+
+7) `Participant 5 Sax`, a mono file of solo saxophone
 
 Each piece is ~6mins, so each of the 7 stems contains ~5hours of audio.
 
