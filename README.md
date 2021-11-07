@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Filosax dataset was conceived, curated and compiled by Dave Foster (a PhD student on the [AIM](https://www.aim.qmul.ac.uk) programme at QMUL) and his supervisor Prof. Simon Dixon ([C4DM](http://c4dm.eecs.qmul.ac.uk) @ [QMUL](https://www.qmul.ac.uk)). It was introduced at [ISMIR 2021](https://ismir2021.ismir.net).
+The Filosax dataset was conceived, curated and compiled by Dave Foster (a PhD student on the [AIM](https://www.aim.qmul.ac.uk) programme at [QMUL](https://www.qmul.ac.uk)) and his supervisor, Prof. Simon Dixon ([C4DM](http://c4dm.eecs.qmul.ac.uk)). It was introduced at [ISMIR 2021](https://ismir2021.ismir.net).
 
 The dataset is a collection of 48 multitrack jazz recordings, where each piece has 7 corresponding audio files:
 
