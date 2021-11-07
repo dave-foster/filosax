@@ -168,7 +168,7 @@ which populates the `/Backing` folder with edited files, which match the version
  
 **Feedback:**
 
-Please report any 
+We welcome any constructive feedback, and will collaborate when possible to encourage novel research using the dataset.
 
 **License:**
 
