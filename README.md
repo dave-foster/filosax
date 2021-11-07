@@ -153,8 +153,6 @@ The Participant folders also contain MIDI files of the transcriptions (frame lev
 
 Download the files below, and import them into your favourite DAW, to see the note transcription accuracy. The PDF file shows the score representation of the same passage.
 
-<a href="Filosax Example.pdf" target="_blank">PDF.</a>
-
 <a href="Filosax Example.mid">Download MIDI File</a>
 
 <a href="Filosax Example.wav">Download Audio File</a>
