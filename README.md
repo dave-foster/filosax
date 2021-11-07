@@ -30,12 +30,14 @@ The motivations behind the dataset, as well as the technical details of the reco
 
 For each piece, there is a corresponding [`.jams`](https://github.com/marl/jams) file containing piece-level annotations:
 
-1) Beat annotation for the start of each bar and any mid-bar chord change
-2) Chord annotation for each bar, and mid-bar chord change
-3) Section annotation for when the solo changes between the 3 categories:
-    a) head (melody)
-    b) written solo (interpretation of transcribed solo)
-    c) improvised solo
+- Beat annotation for the start of each bar and any mid-bar chord change  
+
+- Chord annotation for each bar, and mid-bar chord change
+
+- Section annotation for when the solo changes between the 3 categories:
+    1) head (melody)
+    2) written solo (interpretation of transcribed solo)
+    3) improvised solo
 
 For each Sax recording (5 per piece), there is a corresponding .json file containing note annotations:
 
