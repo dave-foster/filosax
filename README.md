@@ -5,19 +5,19 @@ The Filosax dataset was conceived, curated and compiled by Dave Foster (a PhD st
 
 The dataset is a collection of 48 multitrack jazz recordings, where each piece has 7 corresponding audio files:
 
-1) `Bass_Drums`, a mono file of a mix of bass and drums
+1) `Bass_Drums`, a mono audio file of a mix of bass and drums
 
-2) `Piano_Drums`, a mono file of a mix of piano and drums
+2) `Piano_Drums`, a mono audio file of a mix of piano and drums
 
-3) `Participant 1 Sax`, a mono file of solo saxophone
+3) `Participant 1 Sax`, a mono audio file of solo saxophone
 
-4) `Participant 2 Sax`, a mono file of solo saxophone
+4) `Participant 2 Sax`, a mono audio file of solo saxophone
 
-5) `Participant 3 Sax`, a mono file of solo saxophone
+5) `Participant 3 Sax`, a mono audio file of solo saxophone
 
-6) `Participant 4 Sax`, a mono file of solo saxophone
+6) `Participant 4 Sax`, a mono audio file of solo saxophone
 
-7) `Participant 5 Sax`, a mono file of solo saxophone
+7) `Participant 5 Sax`, a mono audio file of solo saxophone
 
 Each piece is ~6mins, so each of the 7 stems contains ~5hours of audio.
 
@@ -167,7 +167,7 @@ Download the MIDI and wav files below, and import them into your favourite DAW, 
 
 **Try it out:**
 
-The full dataset is undergoing final validation checks and proof-reading, and will be available soon. In the meantime, interested parties can access a subset of the dataset, Filosax Lite, which contains 5 pieces played by 2 participants, for initial experimentation. This can be found on [Zenodo](https://zenodo.org/record/5643734#.YYLQ-i2l3UI), where an request for download needs to be accompanied by a valid research motivation and institution, and agreement with the terms and conditions. Initial users of the Lite dataset will be contacted once the full dataset is available. Integration with [mirdata](https://github.com/dave-foster/mirdata/tree/filosax) is also pending.
+The full dataset is undergoing final validation checks and proof-reading, and will be available soon. In the meantime, interested parties can access a subset of the dataset, Filosax Lite, which contains 5 pieces played by 2 participants, for initial experimentation. This can be found on [Zenodo](https://zenodo.org/record/5643734#.YYLQ-i2l3UI), where an request for download needs to be accompanied by a valid research motivation and institution, and agreement with the terms and conditions. Initial users of the Lite dataset will be contacted once the full dataset is available. Integration with [mirdata](https://github.com/dave-foster/mirdata/tree/filosax)\* is also pending.
 
 The download-able data contains all of the saxophone recordings and annotations, which may be sufficient for many applications. To download the backing data, go to jazzbooks.com, where there are pre-populated "wish lists" of the required files: [Filosax Full](https://www.jazzbooks.com/mm5/merchant.mvc?&Screen=WISH&Store_Code=JAJAZZ&WishList_ID=1679) or [Filosax Lite](https://www.jazzbooks.com/mm5/merchant.mvc?&Screen=WISH&Store_Code=JAJAZZ&WishList_ID=1678). Put the purchased files into the `/Aebersold` folder, and run the appropriate script from inside the home folder and a new Python environment:
 
@@ -199,3 +199,8 @@ The Filosax dataset contains copyright material and is shared with researchers u
 **Acknowledgements:**
 
 The author is a research student at the UKRI Centre for Doctoral Training in Artificial Intelligence and Music, supported by UK Research and Innovation [grant number EP/S022694/1].
+
+\* "mirdata: Software for Reproducible Usage of Datasets"  
+Rachel M. Bittner, Magdalena Fuentes, David Rubinstein, Andreas Jansson, Keunwoo Choi, and Thor Kell
+in International Society for Music Information Retrieval (ISMIR) Conference, 2019
+
