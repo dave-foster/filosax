@@ -1,4 +1,5 @@
 ## Introduction:
+
 The Filosax dataset was conceived, curated and compiled by Dave Foster (a PhD student on the AIM programme at QMUL) and his supervisor Simon Dixon (C4DM @ QMUL). It was introduced at [ISMIR 2021](https://ismir2021.ismir.net).
 
 The dataset is a collection of 48 multitrack jazz recordings, where each piece has 7 corresponding audio files:
@@ -20,6 +21,8 @@ The dataset is a collection of 48 multitrack jazz recordings, where each piece h
 Each piece is ~6mins, so each of the 7 stems contains ~5hours of audio.
 
 The motivations behind the dataset, as well as the technical details of the recording and annotation pipeline, are described in the [ISMIR 2021 paper](https://www.eecs.qmul.ac.uk/~simond/pub/2021/FosterDixon-Filosax-ISMIR2021.pdf).
+
+***
 
 ## Annotations:
 
@@ -98,9 +101,9 @@ For each Sax recording (5 per piece), there is a corresponding .json file contai
 
 The Participant folders also contain MIDI files of the transcriptions (frame level and score level) as well as a PDF and MusicXML of the typeset solo.
 
+***
+
 ## Repertoire:
-
-
 
 | Tune                                   | Key | Av. Tempo (BPM) | Original Soloist       | Year | Album                                |
 |----------------------------------------|-----|-----------------|---------------|------|--------------------------------------|
@@ -153,6 +156,8 @@ The Participant folders also contain MIDI files of the transcriptions (frame lev
 | Three Little Words                     |  C  |       202       | Sonny Rollins | 1956 | Live in Denmark                      |
 | UMMG                                   |  Db |       217       | Joe Henderson | 1991 | Lush Life                            |
 
+***
+
 ## Demo:
 
 Download the MIDI and wav files below, and import them into your favourite DAW, to see the note transcription accuracy and tempo matching. The PDF file shows the score representation of the same passage.
@@ -162,6 +167,8 @@ Download the MIDI and wav files below, and import them into your favourite DAW, 
 <a href="Filosax Example.mid">Download MIDI File</a>
 
 <a href="Filosax Example.pdf">Download PDF File</a>
+
+***
 
 ## Try it out:
 
@@ -175,10 +182,14 @@ The download-able data contains all of the saxophone recordings and annotations,
     python Scripts/Compile_Backing.py -version lite # (Lite version)
   
 which populates the `/Backing` folder with edited files, which match the versions that were used in the recordings.
- 
+
+***
+
 ## Feedback:
 
-We welcome any constructive [feedback](mailto:d.foster@qmul.ac.uk?subject=[GitHub]%20Filosax%20Feedback%20(Constructive)), and will collaborate whenever possible to encourage novel research using the dataset. 
+We welcome any constructive [feedback](mailto:d.foster@qmul.ac.uk?subject=[GitHub]%20Filosax%20Feedback%20(Constructive)), and will collaborate whenever possible to encourage novel research using the dataset.
+
+***
 
 ## License:
 
@@ -192,7 +203,9 @@ The Filosax dataset contains copyright material and is shared with researchers u
     22nd International Society for Music Information Retrieval Conference (ISMIR).
 
 5. Queen Mary University of London shall not be held liable for any errors in the content of Filosax nor damage arising from the use of Filosax.
-6. The Filosax administrator may update these conditions of use at any time. 
+6. The Filosax administrator may update these conditions of use at any time.
+
+***
 
 **Acknowledgements:**
 
