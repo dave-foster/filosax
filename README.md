@@ -190,7 +190,7 @@ which populates the `/Backing` folder with edited files, which match the version
 
 ## Example Scripts
 
-Filosax is integrated into [mirdata](https://mirdata.readthedocs.io/en/stable/source/overview.html) - install it with:
+Filosax is integrated into [mirdata](https://mirdata.readthedocs.io/en/stable/source/overview.html)* - install it with:
 
     pip install mirdata
     
