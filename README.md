@@ -177,16 +177,63 @@ Download the MIDI and wav files below, and import them into your favourite DAW, 
 
 ## Try it out
 
-The full dataset is undergoing final validation checks and proof-reading, and will be available soon. In the meantime, interested parties can access a subset of the dataset, Filosax Lite, which contains 5 pieces played by 2 participants, for initial experimentation. This can be found on [Zenodo](https://zenodo.org/record/5643734#.YYLQ-i2l3UI), where a request for download needs to be accompanied by a valid research motivation and institution, and agreement with the terms and conditions. Initial users of the Lite dataset will be contacted once the full dataset is available. Integration with [mirdata](https://github.com/dave-foster/mirdata/tree/filosax)\* is also pending.
+The dataset can be accessed on [Zenodo](https://zenodo.org/record/6335779#.Y_OMgy-l3T9), where download permission will be given upon agreement with the usage terms. A smaller version, [Filosax Lite](https://zenodo.org/record/5643734#.Y_OM9C-l3T8), for initial testing (2 tracks) is also available.
 
-The download-able data contains all of the saxophone recordings and annotations, which may be sufficient for many applications. To download the backing data, go to jazzbooks.com, where there are pre-populated "wish lists" of the required files: [Filosax Full](https://www.jazzbooks.com/mm5/merchant.mvc?&Screen=WISH&Store_Code=JAJAZZ&WishList_ID=1679) or [Filosax Lite](https://www.jazzbooks.com/mm5/merchant.mvc?&Screen=WISH&Store_Code=JAJAZZ&WishList_ID=1678). Put the purchased files into the `/Aebersold` folder, and run the appropriate script from inside the home folder and a new Python environment:
-
-    pip install mirdata
+The download-able data contains all of the saxophone recordings and annotations, which may be sufficient for many applications. To download the backing data, go to jazzbooks.com, where there are pre-populated "wish lists" of the required files: [Filosax Full](https://www.jazzbooks.com/mm5/merchant.mvc?&Screen=WISH&Store_Code=JAJAZZ&WishList_ID=1679) or [Filosax Lite](https://www.jazzbooks.com/mm5/merchant.mvc?&Screen=WISH&Store_Code=JAJAZZ&WishList_ID=1678). Put the purchased files into the `/Aebersold` folder, and run the appropriate script from inside the home folder:
   
     python Scripts/Compile_Backing.py -version full # (Full version)
     python Scripts/Compile_Backing.py -version lite # (Lite version)
   
 which populates the `/Backing` folder with edited files, which match the versions that were used in the recordings.
+
+***
+
+## Example Scripts
+
+Filosax is integrated into [mirdata](https://mirdata.readthedocs.io/en/stable/source/overview.html) - install it with:
+
+    pip install mirdata
+    
+Annotations can then be accessed like this:
+
+    import mirdata
+    
+    # Load the sax only data (to include backings, use version='full_1.0')
+    filosax = mirdata.initialize('filosax', data_home='/path/to/filosax/', version='full_sax_1.0')  
+    
+    # Get a random tune, display info
+    random_tune = filosax.choice_multitrack()
+    print("Random Tune")
+    print("Name: %s, duration = %.2f sec" % (random_tune.name, random_tune.duration))
+    
+    chords = random_tune.chords
+    first_chord = chords[0]
+    print("First chord: time = %0.2f, duration = %0.2f, chord = %s" % (first_chord[0], first_chord[1], first_chord[2]))
+
+    sax_tracks = random_tune.sax
+    sax_1 = sax_tracks[0]
+    sax_1_notes = sax_1.notes
+    first_note = sax_1_notes[0]
+    print("Sax 1, first note: bar number = %d, pitch = %d, score duration = %d" % (first_note.bar_num, first_note.midi_pitch, first_note.s_rhythmic_duration))
+    print("***")
+    
+    # Get the first tune, display info
+    tune_num = 0
+    multi_ids = filosax.mtrack_ids
+    filosax_data = filosax.load_multitracks()
+    example_tune = filosax_data[multi_ids[tune_num]]
+    print("First Tune")
+    print("Name: %s, duration = %.2f sec" % (example_tune.name, example_tune.duration))
+
+    chords = example_tune.chords
+    first_chord = chords[0]
+    print("First chord: time = %0.2f, duration = %0.2f, chord = %s" % (first_chord[0], first_chord[1], first_chord[2]))
+
+    sax_tracks = example_tune.sax
+    sax_1 = sax_tracks[0]
+    sax_1_notes = sax_1.notes
+    first_note = sax_1_notes[0]
+    print("Sax 1, first note: bar number = %d, pitch = %d, score duration = %d" % (first_note.bar_num, first_note.midi_pitch, first_note.s_rhythmic_duration))
 
 ***
 
